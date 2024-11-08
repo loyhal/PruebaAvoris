@@ -1,0 +1,50 @@
+.filters-apply {
+	margin-top: 3%;
+	background-color: #fff;
+    color: #9f6e9f;
+	border: 1px solid #9f6e9f;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para el filtro y las tarjetas */
+.filters-container {
+    width: 250px;
+     background-color: #FBF6F4;
+     padding: 20px;
+     border-radius: 10px;
+ }
+ .filters {
+     display: block; 
+     background-color: #FBF6F4;
+     padding: 10px;
+     border-radius: 10px;
+ }
+ .filter-options {
+     display: none;
+     list-style: none;
+     padding: 0; 
+     margin-left: 5%;
+     flex-direction: column;
+ }
+ .filter-header {
+     margin-bottom: 2%;
+     display: flex;
+     justify-content: space-between;
+ }
+ .filter-section {
+     margin: 8%;
+ }
+ 
+ .filters-toggle {
+     background-color: #fff;
+     border: 1px solid #ccc;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin: 20px;
+     display: block;
+     text-align: center;
+ }
+ 

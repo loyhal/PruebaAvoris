@@ -1,0 +1,20 @@
+<div id="cards-container">
+    <div *ngFor="let card of cards" class="card">
+      <img style="width:100%; height: 55%;" [src]="card.image" [alt]="card.region">
+      <div class="card-content">
+        <p style="font-size: 0.8em; color: #9f6e9f">{{ card.title }}</p>
+        <p class="card-description" title="Descripción completa de la tarjeta">{{ card.description }}</p>
+      </div>
+      <div class="card-footer">
+        <div class="price-info">
+          <span style="font-size: 0.6em;">Desde</span><br>
+          <strong>{{ card.price }}</strong><br>
+          <p class="details-btn">Ver desglose</p>
+        </div>
+        <div class="footer-buttons">
+          <button class="reserve-btn">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

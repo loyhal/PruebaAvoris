@@ -1,1 +1,204 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #555;
+    text-decoration: none;
+}
+.nav-links.active {
+    display: flex;
+}
+
+/* Estilos para el contenedor principal */
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start; 
+}
+
+.price-info span,
+.price-info strong {
+    margin: 0; 
+	line-height: 1;
+}
+
+.logo {
+    height: 40px; 
+}
+
+/* Estilizar el checkbox */
+.filter-options li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+input[type="checkbox"] {
+    appearance: none; 
+    width: 16px;
+    height: 16px;
+    border: 2px solid #b39eb6;
+    border-radius: 2px; 
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #FF8F50;
+    border-color: #FF8F50;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "\2713";
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*Estilos inputs precio*/
+.price-range {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9f6e9f; 
+    border-radius: 30px; 
+    padding: 5px 10px;
+    background-color: #fff; 
+}
+
+.price-input i {
+    color: #9f6e9f;
+    margin-right: 5px;
+}
+
+.price-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    color: #333; 
+    background-color: transparent; 
+    padding: 5px;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 420px){
+/* Menú de navegación */
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 1000;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex; 
+    }
+    .nav-links a {
+        margin: 10px 0;
+        color: #333;
+    }
+
+    /* Botón del menú hamburguesa */
+    .menu-toggle {
+        display: inline-block;
+    }
+
+
+    .footer {
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    body, .main-content, .filters-container, .cards {
+        overflow-x: hidden;
+    }
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+	
+}
+@media (max-width: 768px) {
+    .main-content {
+		display: flex;
+		flex-direction: column;
+	}	
+	.hidden {
+		display: none;
+	}
+	
+}
+
+@media (min-width: 768px) {
+    /* Botón del menú hamburguesa */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Menú de navegación */
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Filtros */
+    .filters {
+        display: block;
+        position: static;
+        transform: none;
+        width: auto;
+        max-width: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .filters-toggle {
+        display: none;
+    }
+
+    .filters-overlay {
+        display: none;
+    }
+
+    /* Tarjetas de viaje */
+    .cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+
+/*General*/
+.d-flex {
+    display: flex;
+    justify-content: space-around;
+}

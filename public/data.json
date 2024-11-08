@@ -1,0 +1,52 @@
+[
+    {
+        "region": "Asia",
+        "title": "Marruecos, África 6 días",
+        "description": "Descubre Bangkok con Iberjet",
+		"aventura":"rafting",
+        "price": "248,00 €",
+        "image": "marruecos.jpg"
+    },
+    {
+        "region": "Asia",
+        "title": "Japón, 10 días",
+        "description": "Explora Tokio con guía local",
+		"aventura":"surf",
+        "price": "980,00 €",
+        "image": "tokio.jpg"
+    },
+        
+    {
+		"region": "Europa",
+        "title": "Francia, 4 días",
+        "description": "Conoce París y sus alrededores",
+		"aventura":"quads",
+        "price": "560,00 €",
+        "image": "francia.jpg"
+    },
+    {
+        "region": "Europa",
+        "title": "España, 4 días",
+        "description": "Conoce Valencia, Madrid, Barcelona y sus alrededores",
+		"aventura":"surf",
+        "price": "560,00 €",
+        "image": "espanya.jpg"
+    },
+    {
+        "region": "Europa",
+        "title": "Italia, 4 días",
+        "description": "Conoce Roma y sus alrededores",
+		"aventura":"buceo",
+        "price": "560,00 €",
+        "image": "italia.jpg"
+    },
+    {
+        "region": "Europa",
+        "title": "Suiza, 4 días",
+        "description": "Conoce Berna y sus alrededores",
+		"aventura":"snowboard",
+        "price": "560,00 €",
+        "image": "suiza.jpg"
+    }
+    
+]

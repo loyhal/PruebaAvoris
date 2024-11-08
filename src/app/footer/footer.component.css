@@ -1,0 +1,17 @@
+.footer-logo {
+    margin-bottom: 3%;
+ }
+ .footer-text {
+    background-color: #d8cdd1;
+    color: #6C2C77; 
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+/* Pie de página */
+.footer {
+	background-color: #f8f1f1;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 2%;
+    border-top: 1px solid #e0e0e0;
+}
