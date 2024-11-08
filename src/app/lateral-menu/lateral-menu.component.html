@@ -1,0 +1,57 @@
+<aside class="filters-container hidden">
+    <h3>Filtrar mi búsqueda</h3>
+  
+    <!-- Sección de Destinos -->
+    <div class="filter-section">
+      <div class="filter-header" (click)="toggleFilter($event)">
+        <div><i class="fas fa-globe"></i> Destinos</div>
+        <fa-icon [icon]="faAngleRight"></fa-icon>
+      </div>
+      <ul class="filter-options" id="region">
+        <li><input type="checkbox" id="Asia"> <label for="Asia">Asia</label></li>
+        <li><input type="checkbox" id="América"> <label for="América">América</label></li>
+        <li><input type="checkbox" id="Europa"> <label for="Europa">Europa</label></li>
+        <li><input type="checkbox" id="Oceanía"> <label for="Oceanía">Oceanía</label></li>
+        <li><input type="checkbox" id="África"> <label for="África">África</label></li>
+      </ul>
+    </div>
+  
+    <!-- Sección de Aventura -->
+    <div class="filter-section">
+      <div class="filter-header" (click)="toggleFilter($event)">
+        <div><i class="fas fa-mountain"></i> Aventura</div>
+        <fa-icon [icon]="faAngleRight"></fa-icon>
+      </div>
+      <ul class="filter-options" id="aventura">
+        <li><input type="checkbox" id="quads"> <label for="quads">Quads</label></li>
+        <li><input type="checkbox" id="parapente"> <label for="parapente">Parapente</label></li>
+        <li><input type="checkbox" id="rafting"> <label for="rafting">Rafting</label></li>
+        <li><input type="checkbox" id="explora"> <label for="explora">Explora</label></li>
+        <li><input type="checkbox" id="buceo"> <label for="buceo">Buceo</label></li>
+        <li><input type="checkbox" id="paracaidas"> <label for="paracaidas">Paracaídas</label></li>
+        <li><input type="checkbox" id="snowboard"> <label for="snowboard">Snowboard</label></li>
+        <li><input type="checkbox" id="surf"> <label for="surf">Surf</label></li>
+      </ul>
+    </div>
+  
+    <!-- Sección de Precio -->
+    <div class="filter-section">
+      <div class="filter-header" (click)="toggleFilter($event)">
+        <div><i class="fas fa-tag"></i> Precio</div>
+        <fa-icon [icon]="faAngleRight"></fa-icon>
+      </div>
+      <div class="price-range">
+        <div class="price-input">
+            <fa-icon [icon]="faTag"></fa-icon>
+          <input type="text" placeholder="Mínimo">
+        </div>
+        <div class="price-input">
+            <fa-icon [icon]="faTag"></fa-icon>
+          <input type="text" placeholder="Máximo">
+        </div>
+      </div>
+    </div>
+  
+    <button class="filters-apply" (click)="findCards()">Buscar</button>
+  </aside>
+  

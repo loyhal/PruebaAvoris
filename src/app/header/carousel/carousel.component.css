@@ -1,0 +1,65 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; 
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    height: 100%; /* Asegúrate de que el elemento ocupe toda la altura del carrusel */
+    box-sizing: border-box;
+    position: relative;
+  }
+  .carousel-item img {
+    width: 100%;
+  height: 100%; /* Ocupa todo el espacio del carrusel */
+  object-fit: cover; /* Asegura que la imagen se escale y recorte para llenar el espacio */
+  display: block; /* Asegura que la imagen se escale y recorte para llenar el espacio */
+  }
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Ajusta el color del texto según sea necesario */
+    text-align: center;
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho del carrusel */
+    padding: 0 20px; /* Añade un poco de relleno si es necesario */
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    color: white;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .btn-info {
+    background-color: #FF7E3D;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
